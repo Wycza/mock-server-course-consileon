@@ -1,0 +1,17 @@
+{
+  "name": "mock-server",
+  "version": "1.0.0",
+  "description": "MockServer expectations used by the Bruno tests",
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "mock:stop": "node -e \"require('mockserver-node').stop_mockserver({serverPort:1080})\""
+  },
+  "dependencies": {
+    "mockserver-client": "^7.6.0",
+    "mockserver-node": "^7.6.0"
+  }
+}
